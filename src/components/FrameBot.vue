@@ -1,7 +1,7 @@
 <template>
     <div class="container">
       <!-- Iframe de ejemplo -->
-      <iframe src="http://localhost:8000" class="iframe"></iframe>
+      <iframe src="http://127.0.0.1:8000" class="iframe"></iframe>
       
       <!-- Chatbot -->
       <div class="chatbot">
