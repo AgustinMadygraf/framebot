@@ -1,3 +1,4 @@
+// Path: src/components/FrameBot.vue
 import axios from 'axios';
 
 export default {
@@ -11,7 +12,7 @@ export default {
     async sendMessage() {
       try {
         const response = await axios.post('http://127.0.0.1:5000/receive-data', {
-          message: this.userMessage,
+          prompt_user: this.userMessage,
           user_id: '12345'
         });
         this.responseMessage = response.data.received_message;
