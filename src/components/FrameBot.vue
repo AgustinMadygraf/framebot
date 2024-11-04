@@ -5,7 +5,7 @@
       
       <!-- Chatbot -->
       <div class="chatbot">
-        <h3>Chat con MadyBotPy</h3>
+        <h3>MadyBot</h3>
         <input v-model="userMessage" placeholder="Escribe un mensaje" />
         <button @click="sendMessage">Enviar</button>
         
