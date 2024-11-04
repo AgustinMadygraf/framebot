@@ -1,0 +1,16 @@
+/* Asegura que html y body ocupen el 100% de la altura de la ventana */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Asegura que el contenedor raíz de Vue ocupe el 100% */
+  #app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
