@@ -18,6 +18,7 @@
   
   <script>
   import axios from 'axios';
+  import './FrameBot.css';  // Importa el archivo CSS aquí
   
   export default {
     data() {
@@ -41,25 +42,4 @@
     }
   };
   </script>
-  
-  <style scoped>
-  /* Contenedor principal que ocupa el 100% de la altura */
-  .container {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    height: 100%; /* Hace que ocupe toda la altura disponible */
-  }
-  
-  /* Estilos para el iframe y el chatbot */
-  .iframe {
-    width: 80%;
-    height: 98vh;
-    border: none;
-  }
-  .chatbot {
-    width: 20%;
-    height: 98vh;
-  }
-  </style>
   
