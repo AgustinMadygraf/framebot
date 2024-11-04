@@ -1,7 +1,7 @@
 <template>
     <div>
       <!-- Iframe de ejemplo -->
-      <iframe src="localhost:8000" width="100%" height="200px"></iframe>
+      <iframe src="http://localhost:8000" width="100%" height="200px"></iframe>
       
       <!-- Chatbot -->
       <div>
@@ -43,7 +43,6 @@
   </script>
   
   <style scoped>
-  /* Estilos opcionales para el chatbot */
   iframe {
     border: none;
   }
