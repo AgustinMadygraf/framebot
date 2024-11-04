@@ -17,29 +17,9 @@
   </template>
   
   <script>
-  import axios from 'axios';
-  import './FrameBot.css';  // Importa el archivo CSS aquí
+  import FrameBotScript from './FrameBot.js'; // Importa el script externo
+  import './FrameBot.css';  // Importa el archivo CSS
   
-  export default {
-    data() {
-      return {
-        userMessage: '',
-        responseMessage: ''
-      };
-    },
-    methods: {
-      async sendMessage() {
-        try {
-          const response = await axios.post('http://127.0.0.1:5000/receive-data', {
-            message: this.userMessage,
-            user_id: '12345'
-          });
-          this.responseMessage = response.data.received_message;
-        } catch (error) {
-          console.error("Error al enviar mensaje:", error);
-        }
-      }
-    }
-  };
+  export default FrameBotScript;
   </script>
   
