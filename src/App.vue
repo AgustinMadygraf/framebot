@@ -1,15 +1,15 @@
 <template>
   <div id="app">
-    <FrameBot />
+    <MadyBot_Vue />
   </div>
 </template>
 
 <script>
-import FrameBot from './components/FrameBot.vue';
+import MadyBot_Vue from './components/MadyBot_Vue.vue';
 
 export default {
   components: {
-    FrameBot
+    MadyBot_Vue
   }
 };
 </script>

@@ -17,9 +17,9 @@
   </template>
   
   <script>
-  import FrameBotScript from './FrameBot.js'; // Importa el script externo
-  import './FrameBot.css';  // Importa el archivo CSS
+  import MadyBot_VueScript from './MadyBot_Vue.js'; // Importa el script externo
+  import './MadyBot_Vue.css';  // Importa el archivo CSS
   
-  export default FrameBotScript;
+  export default MadyBot_VueScript;
   </script>
   

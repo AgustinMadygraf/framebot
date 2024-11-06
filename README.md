@@ -1,4 +1,4 @@
-# framebot
+# MadyBot_Vue
 
 ## Project setup
 ```

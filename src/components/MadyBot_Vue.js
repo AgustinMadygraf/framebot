@@ -1,4 +1,4 @@
-// Path: src/components/FrameBot.vue
+// Path: src/components/MadyBot_Vue.vue
 import MessageService from '../services/MessageService';
 
 export default {
