@@ -1,25 +1,36 @@
-Parece que el código del servidor Flask está funcionando correctamente y está procesando las solicitudes `POST` al endpoint `/receive-data` sin errores. Sin embargo, para asegurarnos de que todo esté optimizado, aquí tienes una lista de posibles mejoras para este controlador y su estructura general.
+1. **Crear el archivo `src/assets/chatbot.css`**:
+   - Definir estilos generales para el contenedor del chatbot.
+   - Establecer estilos para los mensajes enviados y recibidos, similar a WhatsApp.
 
-### Mejora de `data_controller.py` y Flujo General
+2. **Modificar MadyBot_Vue.vue**:
+   - Importar el archivo `chatbot.css`.
+   - Ajustar la estructura del template para incluir clases de Bootstrap y las nuevas clases de estilo.
 
-1. **Manejo de CORS con Respuesta Preflight**: Aunque el CORS está funcionando, asegúrate de que se manejen correctamente las solicitudes `OPTIONS` (preflight) en caso de futuros cambios de configuración. Verifica que las solicitudes `OPTIONS` respondan con los encabezados CORS adecuados.
+3. **Modificar MadyBot_Vue.js**:
+   - Añadir lógica para manejar el estado de los mensajes (enviados y recibidos).
+   - Implementar métodos para agregar mensajes al historial de chat.
 
-2. **Documentación y Docstrings**: Agrega docstrings más detallados para las funciones y clases principales, explicando cada parámetro de entrada, el propósito de la función, y los posibles códigos de respuesta HTTP.
+4. **Modificar MadyBot_Vue.css**:
+   - Eliminar estilos antiguos que ya no sean necesarios.
+   - Asegurarse de que los nuevos estilos de `chatbot.css` se apliquen correctamente.
 
-3. **Validación Adicional en `DataSchemaValidator`**: Revisa que `DataSchemaValidator` esté validando no solo el tipo de datos, sino también las restricciones específicas (como longitud máxima o caracteres permitidos) en los campos `prompt_user` y `user_id`.
+5. **Modificar index.html**:
+   - Incluir el enlace a la CDN de Bootstrap en la sección `<head>`.
 
-4. **Encapsulación del Log**: En lugar de usar `logger.info()` directamente en cada función, podrías encapsular las operaciones de log en una función auxiliar para mejorar la legibilidad y facilitar el mantenimiento.
+6. **Crear el archivo `src/components/ChatMessage.vue`**:
+   - Definir un componente para los mensajes individuales.
+   - Establecer propiedades para el contenido del mensaje y el tipo (enviado o recibido).
 
-5. **Configuración de Variables de Entorno**: Asegúrate de que `dotenv` se esté usando para almacenar y cargar las variables de entorno necesarias (como configuraciones de CORS, URL de bases de datos, etc.). Esto ayuda a mantener la seguridad y modularidad del proyecto.
+7. **Modificar App.vue**:
+   - Importar y utilizar el nuevo componente `ChatMessage`.
+   - Ajustar el template para mostrar una lista de mensajes usando el nuevo componente.
 
-6. **Optimización de Respuestas JSON**: En `render_json_response`, considera estandarizar todas las respuestas con un formato consistente (por ejemplo, `{ "status": "success/failure", "data": {...}, "message": "..." }`) para facilitar el manejo de errores en el cliente.
+8. **Modificar main.css**:
+   - Asegurarse de que los estilos globales no interfieran con los estilos específicos del chatbot.
 
-7. **Manejo Detallado de Errores HTTP**: Además de `400`, `503`, y `500`, podrías considerar agregar códigos de respuesta más específicos para manejar condiciones particulares, como `429` para demasiadas solicitudes o `401` para falta de autenticación.
+9. **Modificar MessageService.js**:
+   - Añadir lógica para manejar el historial de mensajes.
+   - Implementar métodos para recuperar y almacenar mensajes en el historial.
 
-8. **Implementación de Pruebas Unitarias e Integración Continua**: Asegúrate de tener pruebas unitarias y de integración para el controlador, utilizando `pytest` o `unittest`, y configura CI/CD para garantizar que los cambios no introduzcan errores.
-
-9. **Optimización del Controlador con un Diseño Basado en Eventos**: Si el servidor está manejando muchas solicitudes, podrías considerar implementar un sistema basado en eventos (por ejemplo, usando Celery para tareas asíncronas) para la generación de respuestas, reduciendo así la carga en el servidor.
-
-10. **Mejorar la Seguridad con Autenticación y Autorización**: Si el endpoint debe estar restringido, considera implementar autenticación (por ejemplo, con tokens JWT) para validar el `user_id` o la identidad de los usuarios. También podrías agregar rate limiting para prevenir abusos del servicio.
-
-Estas mejoras ayudarán a optimizar el flujo de trabajo, mejorar la seguridad y la capacidad de mantenimiento del código, y proporcionar una experiencia más sólida y consistente para los usuarios finales.
+10. **Modificarmain.js**:
+    - Asegurarse de que los nuevos estilos y componentes se carguen correctamente al iniciar la aplicación.
