@@ -7,6 +7,11 @@ Estilos para el contenedor principal de la aplicación
   gap: 10px;
   height: 100%;
   margin: 0px;
+  background-image: url('@/assets/background.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
 }
 
 /* Estilos para el iframe y el chatbot */
