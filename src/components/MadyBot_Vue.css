@@ -26,6 +26,7 @@ Estilos para el contenedor principal de la aplicación
   height: 98vh;
   display: flex;
   flex-direction: column;
+  background-color: transparent; 
 }
 
 .card-body {
@@ -33,6 +34,8 @@ Estilos para el contenedor principal de la aplicación
   flex-direction: column;
   height: 100%;
   overflow: hidden;
+  background-color: transparent; 
+
 }
 
 .mt-3 {
