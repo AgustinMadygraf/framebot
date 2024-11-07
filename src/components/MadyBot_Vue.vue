@@ -11,15 +11,15 @@
           <p class="message-received"><strong>MadyBot:</strong> {{ responseMessage }}</p>
         </div>
         <input v-model="userMessage" placeholder="Escribe un mensaje" class="form-control mb-2" />
-        <button @click="sendMessage" class="btn btn-primary">Enviar</button>
+        <div class="button-right">
+          <button @click="sendMessage" class="btn btn-primary">Enviar</button>
+        </div>
       </div>
     </div>
   </div>
 </template>
-
 <script>
 import MadyBot_VueScript from './MadyBot_Vue.js'; // Importa el script externo
 import './MadyBot_Vue.css';  // Importa el archivo CSS
-
 export default MadyBot_VueScript;
 </script>

@@ -23,3 +23,7 @@ Estilos para el contenedor principal de la aplicación
   height: 150px; /* Ajusta esta altura a la que necesites */
   overflow-y: auto;
 }
+.button-right {
+  display: flex;
+  justify-content: flex-end;
+}
