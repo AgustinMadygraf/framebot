@@ -1,6 +1,10 @@
+<!--
+Path: src/components/MadyBot_Vue.vue
+Este archivo es el componente Vue que se encarga de mostrar el chatbot en la interfaz de usuario.
+-->
 <template>
   <div class="container">
-    <!-- Iframe de ejemplo -->
+    <!-- Iframe -->
     <iframe src="http://127.0.0.1:8000" class="iframe"></iframe>
     
     <!-- Chatbot -->
@@ -19,7 +23,7 @@
   </div>
 </template>
 <script>
-import MadyBot_VueScript from './MadyBot_Vue.js'; // Importa el script externo
-import './MadyBot_Vue.css';  // Importa el archivo CSS
+import MadyBot_VueScript from './MadyBot_Vue.js';
+import './MadyBot_Vue.css';
 export default MadyBot_VueScript;
 </script>

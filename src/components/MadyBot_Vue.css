@@ -15,14 +15,28 @@ Estilos para el contenedor principal de la aplicación
   height: 98vh;
   border: none;
 }
+
 .chatbot {
   width: 20%;
   height: 98vh;
+  display: flex;
+  flex-direction: column;
 }
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
 .mt-3 {
-  height: 150px; /* Ajusta esta altura a la que necesites */
+  height: 750px; /* Deberá ser una altura automatica para forzar el scroll */
   overflow-y: auto;
+  flex-shrink: 0;
 }
+
+
 .button-right {
   display: flex;
   justify-content: flex-end;
