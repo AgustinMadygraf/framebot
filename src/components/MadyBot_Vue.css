@@ -1,19 +1,21 @@
-/* Contenedor principal que ocupa el 100% de la altura */
+/* 
+Path: src/components/MadyBot_Vue.css
+Estilos para el contenedor principal de la aplicación
+*/
 .container {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    height: 100%; /* Hace que ocupe toda la altura disponible */
-  }
-  
-  /* Estilos para el iframe y el chatbot */
-  .iframe {
-    width: 80%;
-    height: 98vh;
-    border: none;
-  }
-  .chatbot {
-    width: 20%;
-    height: 98vh;
-  }
-  
+  display: flex;
+  gap: 10px;
+  height: 100%;
+  margin: 0px;
+}
+
+/* Estilos para el iframe y el chatbot */
+.iframe {
+  width: 80%;
+  height: 98vh;
+  border: none;
+}
+.chatbot {
+  width: 20%;
+  height: 98vh;
+}
