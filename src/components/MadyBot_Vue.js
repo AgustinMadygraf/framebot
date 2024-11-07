@@ -1,4 +1,4 @@
-// Path: src/components/MadyBot_Vue.vue
+// Path: src/components/MadyBot_Vue.js
 import MessageService from '../services/MessageService';
 
 export default {
@@ -19,6 +19,7 @@ export default {
       try {
         this.responseMessage = await MessageService.sendMessage(this.userMessage);
         console.log("Mensaje enviado exitosamente:", this.responseMessage);
+        this.userMessage = ''; // Limpiar el campo de entrada después de enviar el mensaje
       } catch (error) {
         this.responseMessage = error.message;
         console.error("Error al enviar el mensaje:", error.message);
