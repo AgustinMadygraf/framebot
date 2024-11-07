@@ -19,3 +19,7 @@ Estilos para el contenedor principal de la aplicación
   width: 20%;
   height: 98vh;
 }
+.mt-3 {
+  height: 150px; /* Ajusta esta altura a la que necesites */
+  overflow-y: auto;
+}

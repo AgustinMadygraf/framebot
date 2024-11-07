@@ -8,7 +8,7 @@
       <h3 class="card-header">MadyBot</h3>
       <div class="card-body">
         <div v-if="responseMessage" class="mt-3">
-          <p class="message-received"><strong>MadyBotPy:</strong> {{ responseMessage }}</p>
+          <p class="message-received"><strong>MadyBot:</strong> {{ responseMessage }}</p>
         </div>
         <input v-model="userMessage" placeholder="Escribe un mensaje" class="form-control mb-2" />
         <button @click="sendMessage" class="btn btn-primary">Enviar</button>
