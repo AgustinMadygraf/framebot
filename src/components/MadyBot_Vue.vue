@@ -11,8 +11,7 @@ Este archivo es el componente Vue que se encarga de mostrar el chatbot en la int
         <h3>MadyBot</h3>
       </div>
       <div class="card_body">
-        <div v-for="(message, index) in messages" :key="index" :class="{'message-received': message.type === 'bot', 'message-sent': message.type === 'user'}">
-          {{ message.text }}
+        <div v-for="(message, index) in messages" :key="index" :class="{'message-received': message.type === 'bot', 'message-sent': message.type === 'user'}" v-html="message.text">
         </div>
       </div>
       <div class="card_footer">
