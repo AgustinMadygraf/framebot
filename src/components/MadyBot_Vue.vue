@@ -6,13 +6,13 @@ Este archivo es el componente Vue que se encarga de mostrar el chatbot en la int
   <div class="container_main">
     <iframe src="http://127.0.0.1:8000" class="iframe"></iframe>
     <div class="chatbot_card">
-      <div class="card-header">
+      <div class="card_header">
         <h3>MadyBot</h3>
       </div>
       <div class="card_body">
           <p class="message-received">{{ responseMessage }}</p>
       </div>
-      <div class="card-fotter">
+      <div class="card_footer">
         <input v-model="userMessage" @keyup.enter="sendMessage" placeholder="Escribe un mensaje" class="form-control mb-2" />        
         <button @click="sendMessage" :disabled="!userMessage" class="btn btn-primary">Enviar</button>
       </div>
