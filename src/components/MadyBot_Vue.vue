@@ -13,8 +13,10 @@ Este archivo es el componente Vue que se encarga de mostrar el chatbot en la int
           <p class="message-received">{{ responseMessage }}</p>
       </div>
       <div class="card_footer">
-        <input v-model="userMessage" @keyup.enter="sendMessage" placeholder="Escribe un mensaje" class="form-control mb-2" />        
-        <button @click="sendMessage" :disabled="!userMessage" class="btn btn-primary">Enviar</button>
+        <div class="input-group mb-2">
+          <input v-model="userMessage" @keyup.enter="sendMessage" placeholder="Mensaje" class="form-control" />
+          <button @click="sendMessage" :disabled="!userMessage" class="btn btn-primary">Enviar</button>
+        </div>
       </div>
     </div>
   </div>

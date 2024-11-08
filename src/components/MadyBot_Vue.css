@@ -24,8 +24,15 @@ Estilos para el contenedor principal de la aplicación
   background-color: transparent; 
 }
 
-.chatbot_header {
+.card_header {
   height: 15vh;
+  /*Color verde oscuro de fondo y letras negrita blancas*/
+  background-color: #042e00;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card_body {
