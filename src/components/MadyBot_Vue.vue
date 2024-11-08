@@ -9,7 +9,7 @@ Este archivo es el componente Vue que se encarga de mostrar el chatbot en la int
       <div class="card-header">
         <h3>MadyBot</h3>
       </div>
-      <div class="card-body">
+      <div class="card_body">
           <p class="message-received">{{ responseMessage }}</p>
       </div>
       <div class="card-fotter">
