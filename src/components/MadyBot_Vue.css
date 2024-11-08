@@ -9,7 +9,7 @@ Estilos para el contenedor principal de la aplicación
 
 /* Estilos para el iframe y el chatbot */
 .iframe {
-  width: 75%;
+  width: 85%;
 }
 
 /* Nueva clase para el fondo */
@@ -66,17 +66,17 @@ Estilos para el contenedor principal de la aplicación
   border-radius: 10px;
   padding: 10px;
   margin: 5px 0;
-  max-width: 80%;
-  align-self: flex-start;
+  max-width: 85%;
+  margin-right: auto;
 }
 
 .message-sent {
   background-color: #dcf8c6;
   border-radius: 10px;
   padding: 10px;
-  margin: 5px 0;
-  max-width: 80%;
-  align-self: flex-end;
+  max-width: 85%;
+  margin-left: auto;
+
 }
 
 .card_footer {
