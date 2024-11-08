@@ -4,42 +4,38 @@ Estilos para el contenedor principal de la aplicación
 */
 .container_main {
   display: flex;
-  gap: 15px; 
-  border: 15px solid transparent;
   background-image: url('@/assets/background.webp');
 }
 
 /* Estilos para el iframe y el chatbot */
 .iframe {
   width: 75%;
-  height: 95vh;
-  border: none;
 }
 
 .chatbot_card {
   width: 25%;
-  height: 95vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: transparent; 
+  background-color: transparent;
 }
 
 .card_header {
   height: 15vh;
+  margin: 10px;
+  border-radius: 10px;
   background-color: #042e00;
   color: white;
   font-weight: bold;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
 .chatbot_icon {
   width: 60px;
   height: 60px; 
-  border-radius: 50%; /*debe estar a la izquierda*/
+  border-radius: 50%;
   margin-right: 10px;
-
 }
 
 .card_body {
