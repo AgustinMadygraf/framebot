@@ -1,3 +1,7 @@
+Modificar "vue.config.js" para que trabaje con un archivo ".env" en lugar de tener en el código la IP.
+
+
+
 10 pasos detallados para mejorar tu CSS utilizando Bootstrap:
 
 1. **Revisar y Limpiar el CSS Existente**:

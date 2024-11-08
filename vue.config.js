@@ -1,4 +1,8 @@
-// Path: vue.config.js
+/*
+Path: vue.config.js
+El archivo vue.config.js se utiliza para configurar el servidor de desarrollo de Vue.js.
+*/
+
 const { defineConfig } = require('@vue/cli-service');
 
 module.exports = defineConfig({
