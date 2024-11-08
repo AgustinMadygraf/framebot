@@ -6,7 +6,8 @@ Este archivo es el componente Vue que se encarga de mostrar el chatbot en la int
   <div class="container_main">
     <iframe src="http://127.0.0.1:8000" class="iframe"></iframe>
     <div class="chatbot_card">
-      <div class="card_header">
+      <div class="card_header"> <!-- agregar chatbot-icon.jpg-->
+        <img src="../../src/assets/chatbot-icon.jpg" alt="Chatbot" class="chatbot_icon" />
         <h3>MadyBot</h3>
       </div>
       <div class="card_body">
