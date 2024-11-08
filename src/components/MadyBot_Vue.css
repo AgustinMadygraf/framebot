@@ -13,7 +13,7 @@ Estilos para el contenedor principal de la aplicación
 }
 
 .chatbot_card {
-  width: 25%;
+  width: 400px;
   height: 100vh;
   display: flex;
   flex-direction: column;
