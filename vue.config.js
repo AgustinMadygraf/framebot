@@ -6,12 +6,12 @@ module.exports = defineConfig({
   
   // Configuración del servidor de desarrollo
   devServer: {
-    host: 'localhost', // Cambia 'localhost' a la IP deseada si es necesario
+    host: '192.168.0.118', // Cambia 'localhost' a la IP deseada
     port: 8080, // Puerto donde corre el servidor de desarrollo
     hot: true, // Habilita la recarga en caliente (Hot Module Replacement)
     liveReload: true, // Recarga la página al detectar cambios
     client: {
-      webSocketURL: 'ws://localhost:8080/ws', // URL del WebSocket para el cliente
+      webSocketURL: 'ws://192.168.0.118:8080/ws', // URL del WebSocket para el cliente
     },
     proxy: {
       // Redirecciona las solicitudes API para evitar problemas de CORS
