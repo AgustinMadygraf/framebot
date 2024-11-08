@@ -4,13 +4,15 @@ El archivo vue.config.js se utiliza para configurar el servidor de desarrollo de
 */
 
 const { defineConfig } = require('@vue/cli-service');
+const dotenv = require('dotenv');
+dotenv.config();
 
 module.exports = defineConfig({
   transpileDependencies: true,
   
   // Configuración del servidor de desarrollo
   devServer: {
-    host: '192.168.0.118', // Cambia 'localhost' a la IP deseada
+    host: process.env.VUE_APP_IP || 'localhost',
     port: 8080, // Puerto donde corre el servidor de desarrollo
     hot: true, // Habilita la recarga en caliente (Hot Module Replacement)
     liveReload: true, // Recarga la página al detectar cambios
