@@ -12,6 +12,11 @@ Estilos para el contenedor principal de la aplicación
   width: 75%;
 }
 
+/* Nueva clase para el fondo */
+.background-image {
+  background-image: url('@/assets/background.webp');
+}
+
 .chatbot_card {
   width: 400px;
   height: 100vh;

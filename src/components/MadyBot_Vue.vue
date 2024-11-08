@@ -3,7 +3,7 @@ Path: src/components/MadyBot_Vue.vue
 Este archivo es el componente Vue que se encarga de mostrar el chatbot en la interfaz de usuario.
 -->
 <template>
-  <div class="container_main">
+  <div class="container-fluid d-flex background-image">
     <iframe src="http://127.0.0.1:8000" class="iframe"></iframe>
     <div class="chatbot_card">
       <div class="card_header"> <!-- agregar chatbot-icon.jpg-->
