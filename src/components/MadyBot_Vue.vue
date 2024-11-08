@@ -11,7 +11,7 @@ Este archivo es el componente Vue que se encarga de mostrar el chatbot en la int
         <h3>MadyBot</h3>
       </div>
       <div class="card_body">
-          <p class="message-received">{{ responseMessage }}</p>
+        <div class="message-received">{{ responseMessage }}</div>
       </div>
       <div class="card_footer">
         <div class="input-group mb-2">

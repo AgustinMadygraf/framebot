@@ -41,7 +41,7 @@ Estilos para el contenedor principal de la aplicación
 }
 
 .card_body {
-  margin: 15px;
+  margin: -10px;
   margin-left: 15px;
   margin-right: 20px;
   flex-direction: column;
@@ -49,6 +49,25 @@ Estilos para el contenedor principal de la aplicación
   overflow: hidden;
   background-color: transparent; 
   overflow-y: auto;
+}
+
+/* Estilos para los globos de mensajes */
+.message-received {
+  background-color: #e1ffc7;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px 0;
+  max-width: 80%;
+  align-self: flex-start;
+}
+
+.message-sent {
+  background-color: #dcf8c6;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px 0;
+  max-width: 80%;
+  align-self: flex-end;
 }
 
 .card_footer {
