@@ -5,7 +5,7 @@ export default {
   data() {
     return {
       userMessage: '',
-      responseMessage: ''
+      responseMessage: '¡Bienvenido al chat de MadyBot! ¿En qué puedo ayudarte hoy?'
     };
   },
   methods: {
