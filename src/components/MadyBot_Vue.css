@@ -2,16 +2,11 @@
 Path: src/components/MadyBot_Vue.css
 Estilos para el contenedor principal de la aplicación
 */
-.container {
+.container_main {
   display: flex;
-  gap: 10px;
-  height: 100%;
-  margin: 0px;
+  gap: 15px; 
+  border: 15px solid transparent;
   background-image: url('@/assets/background.webp');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-
 }
 
 /* Estilos para el iframe y el chatbot */
@@ -21,7 +16,7 @@ Estilos para el contenedor principal de la aplicación
   border: none;
 }
 
-.chatbot {
+.chatbot_card {
   width: 20%;
   height: 98vh;
   display: flex;
