@@ -17,6 +17,10 @@ Estilos para el contenedor principal de la aplicación
   background-image: url('@/assets/background.webp');
 }
 
+.container-fluid.d-flex.background-image {
+  padding: 0;
+}
+
 .chatbot_card {
   width: 400px;
   height: 100vh;
@@ -26,7 +30,7 @@ Estilos para el contenedor principal de la aplicación
 }
 
 .card_header {
-  height: 15vh;
+  height: 10vh;
   margin: 10px;
   margin-right: 20px;
   border-radius: 10px;
